@@ -23,7 +23,9 @@ export default {
 
 :root {
   --radial: hsl(214, 47%, 23%);
-  --grey: hsl(217, 16%, 45%)
+  --grey: hsl(217, 16%, 45%);
+  --blue: hsl(229, 64%, 46%);
+  --white: #ffffff;
 }
 
 body {
