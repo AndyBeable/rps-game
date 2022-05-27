@@ -8,23 +8,23 @@
 
 <script>
 export default {
-  name: "Rock",
+  name: "Scissors",
 };
 </script>
 
 <style lang="scss" scoped>
 .card {
   background: var(--scissors);
-  width: 35vw;
-  height: 35vw;
+  width: 17vw;
+  height: 17vw;
   border-radius: 50%;
   position: relative;
   box-shadow: inset 0 -5px 3px #b9c2da;
 
   & .bg {
     background-color: #fff;
-    width: 25vw;
-    height: 25vw;
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     position: absolute;
     left: 50%;

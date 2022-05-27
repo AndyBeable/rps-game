@@ -1,5 +1,5 @@
 <template>
-  <button class="card">
+  <button class="card paper">
     <div class="bg">
       <img src="../assets/icon-paper.svg" alt="" />
     </div>
@@ -8,23 +8,23 @@
 
 <script>
 export default {
-  name: "Rock",
+  name: "Paper",
 };
 </script>
 
 <style lang="scss" scoped>
 .card {
   background: var(--paper);
-  width: 35vw;
-  height: 35vw;
+  width: 17vw;
+  height: 17vw;
   border-radius: 50%;
   position: relative;
   box-shadow: inset 0 -5px 3px #2944C5;
 
   & .bg {
     background-color: #fff;
-    width: 25vw;
-    height: 25vw;
+    width: 12vw;
+    height: 12vw;
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -40,5 +40,8 @@ export default {
       height: 5vw;
     }
   }
+}
+
+.paper {
 }
 </style>
