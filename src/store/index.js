@@ -3,8 +3,14 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     score: 0,
+    playerChoice: "",
+    computerChoice: "",
   },
-  mutations: {},
+  mutations: {
+    increase(state) {
+      state.score++
+    }
+  },
   actions: {},
   modules: {},
 });
