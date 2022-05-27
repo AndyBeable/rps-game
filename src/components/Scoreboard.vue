@@ -5,7 +5,7 @@
     </div>
     <div class="scoreboard__score">
       <span class="score">SCORE</span>
-      <span class="number">0</span>
+      <span class="number">{{ $store.state.score }}</span>
     </div>
   </div>
 </template>
@@ -24,6 +24,11 @@ export default {
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5rem;
+
+  &__logo {
+    margin-right: 3rem;
+  }
 
   &__score {
     background-color: var(--white);
