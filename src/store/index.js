@@ -26,6 +26,17 @@ export default createStore({
           this.state.result = "LOSE";
         }
       }
+      else if(player === 'paper') {
+        if(computerChoice === 'paper') {
+          this.state.result = 'DRAW'
+        } else if (computerChoice === 'rock') {
+          this.state.score += 1;
+          this.state.result = 'WIN'
+        } else if (computerChoice === 'scissors') {
+          this.state.score -= 1;
+          this.state.results = 'LOSE'
+        }
+      }
     },
   },
   actions: {},

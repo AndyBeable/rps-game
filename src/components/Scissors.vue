@@ -1,5 +1,5 @@
 <template>
-  <button class="card">
+  <button class="card" @click="selectCard">
     <div class="bg">
       <img src="../assets/icon-scissors.svg" alt="" />
     </div>
@@ -9,6 +9,11 @@
 <script>
 export default {
   name: "Scissors",
+  methods: {
+    selectCard() {
+      this.$store.commit('pick', 'scissors')
+    }
+  }
 };
 </script>
 
