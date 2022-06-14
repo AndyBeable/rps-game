@@ -3,7 +3,7 @@
     <Paper />
     <Scissors />
   </div>
-  <Rock class="rock"/>
+  <Rock class="rock" />
 </template>
 
 <script>

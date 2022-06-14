@@ -47,6 +47,11 @@ export default createStore({
         }
       }
     },
+    playAgain() {
+      this.state.playerChoice = '';
+      this.state.computerChoice = '';
+      this.state.result = '';
+    }
   },
   actions: {},
   modules: {},

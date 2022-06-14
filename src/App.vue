@@ -1,21 +1,17 @@
 <template>
-  <div id="nav">
-    <!--    <router-link to="/">Home</router-link> |-->
-    <!--    <router-link to="/about">About</router-link>-->
-    <Scoreboard />
-    <Board />
+  <div id="app">
+<!--    <Scoreboard />-->
+    <router-view />
   </div>
-  <router-view />
+
 </template>
 
 <script>
-import Scoreboard from "./components/Scoreboard.vue";
-import Board from './components/Board.vue'
+// import Scoreboard from "./components/Scoreboard.vue";
 
 export default {
   components: {
-    Scoreboard,
-    Board
+    // Scoreboard
   },
 };
 </script>
