@@ -20,6 +20,7 @@
         <rock class="rock" v-if="$store.state.computerChoice === 'rock'" />
 <!--        <div class="mobile-title">THE HOUSE PICKED</div>-->
       </div>
+      <button @click="$store.commit('playAgain')">Play Again</button>
     </div>
   </div>
 </template>
@@ -38,4 +39,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+</style>
