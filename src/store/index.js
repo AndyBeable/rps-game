@@ -5,11 +5,28 @@ export default createStore({
     score: 0,
     playerChoice: "",
     computerChoice: "",
+    result: "",
   },
   mutations: {
-    increase(state) {
-      state.score++
-    }
+    pick(state, data) {
+      this.state.playerChoice = data;
+      let player = data;
+      let items = ["rock", "paper", "scissors"];
+      let computerChoice = items[Math.floor(Math.random() * items.length)];
+      this.state.computerChoice = computerChoice;
+      this.state.result = true;
+      if (player === "rock") {
+        if (computerChoice === "rock") {
+          this.state.result = "DRAW";
+        } else if (computerChoice === "scissors") {
+          this.state.score += 1;
+          this.state.result = "WIN";
+        } else if (computerChoice === "paper") {
+          this.state.score -= 1;
+          this.state.result = "LOSE";
+        }
+      }
+    },
   },
   actions: {},
   modules: {},

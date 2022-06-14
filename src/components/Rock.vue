@@ -11,7 +11,7 @@ export default {
   name: "Rock",
   methods: {
     selectCard() {
-      this.$store.commit('increase')
+      this.$store.commit('pick', 'rock')
     }
   }
 };
