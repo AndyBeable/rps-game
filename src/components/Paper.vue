@@ -11,9 +11,9 @@ export default {
   name: "Paper",
   methods: {
     selectCard() {
-      this.$store.commit('pick', 'paper')
-    }
-  }
+      this.$store.commit("pick", "paper");
+    },
+  },
 };
 </script>
 
@@ -24,7 +24,7 @@ export default {
   height: 17vw;
   border-radius: 50%;
   position: relative;
-  box-shadow: inset 0 -5px 3px #2944C5;
+  box-shadow: inset 0 -5px 3px #2944c5;
 
   & .bg {
     background-color: #fff;

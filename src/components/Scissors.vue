@@ -11,9 +11,9 @@ export default {
   name: "Scissors",
   methods: {
     selectCard() {
-      this.$store.commit('pick', 'scissors')
-    }
-  }
+      this.$store.commit("pick", "scissors");
+    },
+  },
 };
 </script>
 

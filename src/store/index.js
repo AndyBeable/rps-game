@@ -25,16 +25,25 @@ export default createStore({
           this.state.score -= 1;
           this.state.result = "LOSE";
         }
-      }
-      else if(player === 'paper') {
-        if(computerChoice === 'paper') {
-          this.state.result = 'DRAW'
-        } else if (computerChoice === 'rock') {
+      } else if (player === "paper") {
+        if (computerChoice === "paper") {
+          this.state.result = "DRAW";
+        } else if (computerChoice === "rock") {
           this.state.score += 1;
-          this.state.result = 'WIN'
-        } else if (computerChoice === 'scissors') {
+          this.state.result = "WIN";
+        } else if (computerChoice === "scissors") {
           this.state.score -= 1;
-          this.state.results = 'LOSE'
+          this.state.results = "LOSE";
+        }
+      } else if (player === "scissors") {
+        if (computerChoice === "scissors") {
+          this.state.result = "DRAW";
+        } else if (computerChoice === "rock") {
+          this.state.score -= 1;
+          this.state.result = "LOSE";
+        } else if (computerChoice === "paper") {
+          this.state.score += 1;
+          this.state.result = "WIN";
         }
       }
     },
