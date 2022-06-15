@@ -63,10 +63,33 @@ export default {
     }
   }
 
+  .result__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 1rem 2.5rem;
+      border-radius: 7px;
+      background-color: #fff;
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    button:hover {
+      color: red;
+    }
+  }
+
+  .result__title,
   .result__title span {
     color: var(--white);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 56px;
   }
 }
 </style>

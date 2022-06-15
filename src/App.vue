@@ -29,21 +29,32 @@ export default {
   --scissors: linear-gradient(to top, rgb(236, 159, 15), rgb(236, 170, 34));
 }
 
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-width: 600;
+  font-size: 18px;
+  outline: none;
+  letter-spacing: 2px;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  height: 100vh;
   background: -webkit-radial-gradient(center top,#1f3756,#151632);
+
 }
 
 #app {
-  font-family: "Barlow Semi Condensed", sans-serif;
   padding-top: 5rem;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+}
 button {
-  cursor: pointer;
+  border: none;
+  cursor: pointer
 }
 </style>
