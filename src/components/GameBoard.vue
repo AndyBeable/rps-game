@@ -31,6 +31,7 @@ export default {
   & img {
     height: 30vw;
     position: absolute;
+    top: 28rem;
   }
 }
 

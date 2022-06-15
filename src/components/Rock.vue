@@ -23,9 +23,7 @@ export default {
   width: 17vw;
   height: 17vw;
   border-radius: 50%;
-  position: absolute;
-  top: 40rem;
-  left: 30rem;
+  position: relative;
   box-shadow: inset 0 -5px 3px #b9c2da;
 
   & .bg {
