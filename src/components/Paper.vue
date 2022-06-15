@@ -1,5 +1,5 @@
 <template>
-  <button class="card paper" @click="selectCard">
+  <button class="card" @click="selectCard">
     <div class="bg">
       <img src="../assets/icon-paper.svg" alt="" />
     </div>
@@ -23,7 +23,9 @@ export default {
   width: 17vw;
   height: 17vw;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
+  left: 15rem;
+  top: 20rem;
   box-shadow: inset 0 -5px 3px #2944c5;
 
   & .bg {
@@ -45,8 +47,5 @@ export default {
       height: 5vw;
     }
   }
-}
-
-.paper {
 }
 </style>

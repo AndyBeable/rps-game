@@ -1,7 +1,7 @@
 <template>
   <div>
     <Scoreboard />
-    <GameBoard v-if="this.$store.state.result.length == 0"/>
+    <GameBoard v-if="this.$store.state.result.length === 0"/>
     <Result v-else />
   </div>
 </template>

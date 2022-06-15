@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <img src="@/assets/bg-triangle.svg" alt="" />
     <Paper />
     <Scissors />
   </div>
@@ -26,6 +27,11 @@ export default {
   display: flex;
   justify-content: space-around;
   margin-bottom: 5rem;
+
+  & img {
+    height: 30vw;
+    position: absolute;
+  }
 }
 
 .rock {
