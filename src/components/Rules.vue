@@ -3,7 +3,7 @@
     <div class="container">
       <div class="rules__header">
         <h3>RULES</h3>
-        <button class="close__button">
+        <button class="close__button" @click="$emit('showRules')">
           <img class="close__image" src="@/assets/icon-close.svg" alt="" />
         </button>
       </div>
